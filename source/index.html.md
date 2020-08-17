@@ -7,7 +7,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - java
 
 toc_footers:
-  - <a href='https://huoju.io'>Huoju.co/a>
+  - <a href='https://huoju.io'>Huoju Pro</a>
 
 includes:
   - rest_general
@@ -64,9 +64,15 @@ search: true
 
 # Huoju Pro API Documentation
 
-Huoju Pro API is the latest release of APIs allowing our users to access the exchange programmatically. It is a major revision 
-of the older releases. The Huoju team re-implemented the entire backend system in support for the Huoju Pro API. It is designed
-to be fast, flexible, stable, and comprehensive. 
+Using Huoju Pro API
+
+The Huoju Pro API is based on RESTful and WebSocket.
+
+    The base URL for the RESTful API is https://huoju.co/.
+    The URL for the WebSocket is: https://huoju.co/0/api/pro/v1/stream.
+
+The RESTful API has JSON-encoded responses. All websocket messages are JSON-encoded.
+
 
 ## Demo codes
 
@@ -76,5 +82,4 @@ We provide comprehensive demos (currently available in python). We provide two t
 * Large, complex demo scripts to show you how to design a trading strategy using APIs from this document.
 
 See [https://github.com/HuojuPro/huoju-api-demo](https://github.com/HuojuPro/huoju-api-demo) for more details.
-
 
