@@ -56,7 +56,7 @@ includes:
   - error_code
 
 header_navigators:
-  - <a href="https://github.com/HuojuPro/huoju-official-api-docs/#huoju-pro-api-documentation" class="current">Cash APIs</a>
+  - <a href="https://github.com/HuojuPro/huoju-official-api-docs" class="current">Cash APIs</a>
 
 search: true
 ---
@@ -82,4 +82,3 @@ We provide comprehensive demos (currently available in python). We provide two t
 * Large, complex demo scripts to show you how to design a trading strategy using APIs from this document.
 
 See [https://github.com/HuojuPro/huoju-api-demo](https://github.com/HuojuPro/huoju-api-demo) for more details.
-
