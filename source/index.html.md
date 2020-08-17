@@ -56,7 +56,7 @@ includes:
   - error_code
 
 header_navigators:
-  - <a href="https://github.com/HuojuPro/huoju-official-api-docs" class="current">Cash APIs</a>
+  - <a href="https://github.com/HuojuPro/huoju-official-api-docs" class="current">Trading APIs</a>
 
 search: true
 ---
