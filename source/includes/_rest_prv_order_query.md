@@ -1,0 +1,95 @@
+###
+### Query Order
+
+> Query Order - Successful Response (Status 200, code 0)
+
+```json
+{
+    "code": 0,
+    "accountCategory": "CASH",
+    "accountId": "cshQtyfq8XLAA9kcf19h8bXHbAwwoqDo",
+    "data": [
+        {
+            "symbol":       "BTC/USDT",
+            "price":        "8130.24",
+            "orderQty":     "0.00082",
+            "orderType":    "Limit",
+            "avgPx":        "7391.13",
+            "cumFee":       "0.005151618",
+            "cumFilledQty": "0.00082",
+            "errorCode":    "",
+            "feeAsset":     "USDT",
+            "lastExecTime": 1575953134011,
+            "orderId":      "a16eee206d610866943712rPNknIyhH",
+            "seqNum":       2622058,
+            "side":         "Buy",
+            "status":       "Filled",
+            "stopPrice":    "",
+            "execInst":     "NULL_VAL"
+        },
+        {
+            "symbol":       "BTC/USDT",
+            "price":        "8131.22",
+            "orderQty":     "0.00082",
+            "orderType":    "Market",
+            "avgPx":        "7392.02",
+            "cumFee":       "0.005152238",
+            "cumFilledQty": "0.00082",
+            "errorCode":    "",
+            "feeAsset":     "USDT",
+            "lastExecTime": 1575953151764,
+            "orderId":      "a16eee20b6750866943712zWEDdAjt3",
+            "seqNum":       2623469,
+            "side":         "Buy",
+            "status":       "Filled",
+            "stopPrice":    "",
+            "execInst":     "NULL_VAL"
+        }
+    ]
+}
+```
+
+Query order status, either open or history order. //TODO: not all order, specify order range later.
+
+#### HTTP Request
+
+`GET <account-group>/api/pro/v1/{account-category}/order/status?orderId={orderId}`
+
+`orderId` could be a single order Id, or multiple order Ids separated by `,`. 
+
+Set `account-category` to`cash`. 
+
+#### Signature
+
+You should sign the message in header as specified in [**Authenticate a RESTful Request**](#sign-a-request) section.
+
+#### Prehash String
+
+`<timestamp>+order/status`
+
+#### Response
+
+Returns a list order information in `data` field. Please use `orderId` field to match with your order.
+
+Name           | Type     | Description
+---------------|----------|-------------- 
+`avgPx`        | `String` | average fill price
+`cumFee`       | `String` | cumulated filled comission
+`cumFilledQty` | `String` | cumulated filled qty
+`errorCode`    | `String` | Could be empty
+`feeAsset`     | `String` | Fee asset, e.g, `USDT`
+`lastExecTime` | `String` | latest execution timestamp
+`orderId`      | `String` | order id
+`orderQty`     | `String` | order quantity
+`orderType`    | `String` | order type
+`price`        | `String` | order price
+`seqNum`       | `Long`   | sequence number
+`side`         | `String` | order side
+`status`       | `String` | order status
+`stopPrice`    | `String` | stop price(could be empty)
+`symbol`       | `String` | symbol
+`execInst`     | `String` | execution instruction, `POST` for Post-Only orders, `Liquidation` for forced-liquidation orders, and `NULL_VAL` otherwise.
+
+#### Code Sample
+
+Please refer to python code to [get order status](https://github.com/HuojuPro/huoju-api-demo/blob/master/python/order_query.py)
