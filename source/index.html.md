@@ -68,8 +68,8 @@ Using Huoju Pro API
 
 The Huoju Pro API is based on RESTful and WebSocket.
 
-    The base URL for the RESTful API is https://huoju.co/.
-    The URL for the WebSocket is: https://huoju.co/0/api/pro/v1/stream.
+    The base URL for the RESTful API is <a href='https://huoju.io'>https://huoju.co</a>.
+    The URL for the WebSocket is: <a href='https://huoju.co/0/api/pro/v1/stream'>https://huoju.co/0/api/pro/v1/stream</a>.
 
 The RESTful API has JSON-encoded responses. All websocket messages are JSON-encoded.
 
