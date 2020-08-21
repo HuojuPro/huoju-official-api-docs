@@ -662,7 +662,7 @@ The <code>timestamp</code> is the UTC timestamp in milliseconds.  </p>
     </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
             </span><span class="s2">"symbol"</span><span class="p">:</span><span class="w">                </span><span class="s2">"BTC/USDT"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"baseAsset"</span><span class="p">:</span><span class="w">             </span><span class="s2">"BTMX"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"baseAsset"</span><span class="p">:</span><span class="w">             </span><span class="s2">"BTC"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"quoteAsset"</span><span class="p">:</span><span class="w">            </span><span class="s2">"USDT"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"status"</span><span class="p">:</span><span class="w">                </span><span class="s2">"Normal"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"minNotional"</span><span class="p">:</span><span class="w">           </span><span class="s2">"5"</span><span class="p">,</span><span class="w">
@@ -697,7 +697,7 @@ The <code>timestamp</code> is the UTC timestamp in milliseconds.  </p>
 <tr>
 <td><code>baseAsset</code></td>
 <td><code>String</code></td>
-<td>e.g. <code>&quot;BTMX&quot;</code></td>
+<td>e.g. <code>&quot;BTC&quot;</code></td>
 </tr>
 <tr>
 <td><code>quoteAsset</code></td>
@@ -1403,7 +1403,7 @@ only 500 bars will be returned. </li>
 
 <p><strong>Signature</strong></p>
 
-<p>You should sign the message in header as specified in <a href="#sign-a-Request"><strong>Authenticate a RESTful Request</strong></a> section.</p>
+<p>You should sign the message in header as specified in <a href="#sign-a-request"><strong>Authenticate a RESTful Request</strong></a> section.</p>
 
 <p><strong>prehash string</strong> </p>
 
@@ -4155,7 +4155,7 @@ you can use to update the order book snapshot. In the message, <code>price</code
 <li>if <code>size</code> is zero, you should <strong>delete</strong> the level at <code>price</code>. </li>
 </ul>
 
-<p>See <a href="#orderbook-snapshot">Orderbook Snapshot</a> for code examples.</p>
+<p>See <a href="https://github.com/HuojuPro/huoju-api-demo/blob/master/python/websocket_orderbook_snapshot.py">Orderbook Snapshot</a> for code examples.</p>
 <h3 id='channel-market-trades'>Channel: Market Trades</h3>
 <blockquote>
 <p>Subscribe to <code>BTC/USDT</code> market trades stream</p>
