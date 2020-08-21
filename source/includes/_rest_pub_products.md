@@ -14,7 +14,7 @@ curl -X GET https://huoju.co/api/pro/v1/products
     "data": [
         {
             "symbol":                "BTC/USDT",
-            "baseAsset":             "BTMX",
+            "baseAsset":             "BTC",
             "quoteAsset":            "USDT",
             "status":                "Normal",
             "minNotional":           "5",
@@ -42,7 +42,7 @@ The response contains the following general fields:
  Name         | Type     | Description                                                                                 
 -------------- | -------- | --------------------- 
  `symbol`      | `String` | e.g. `"BTC/USDT"`
- `baseAsset`   | `String` | e.g. `"BTMX"`
+ `baseAsset`   | `String` | e.g. `"BTC"`
  `quoteAsset`  | `String` | e.g. `"USDT"`
  `status`      | `String` | `"Normal"`
 

@@ -29,7 +29,7 @@ If the request failed, you will receive an ack message with non-zero value `code
       "id": "ec1L5cDt",
       "code": 100008,
       "reason": "SYMBOL_ERROR",
-      "info": "Unable to handle symbol USDT/BTMX, expecting BTC-PERP"
+      "info": "Unable to handle symbol USDT/BTC, expecting BTC/USDT"
     }
 
 
@@ -66,10 +66,10 @@ If the subscription failed, you will receive an ack message with non-zero `code`
 
     {
       "m": "sub",
-      "ch": "depth-realtime:BTC/USDT",
+      "ch": "depth-realtime:USDT/BTC",
       "id": "abc123",
       "code": 100008,
-      "reason": "Unable to handle symbol USDT/BTMX"
+      "reason": "Unable to handle symbol USDT/BTC"
     }
 
 
@@ -146,7 +146,7 @@ If the request failed, you will receive an ack message with non-zero `code` valu
       "id": "ec1L5cDt",
       "code": 100008,
       "reason": "SYMBOL_ERROR",
-      "info": "Unable to handle symbol USDT/BTMX, expecting BTC-PERP"
+      "info": "Unable to handle symbol USDT/BTC, expecting BTC/USDT"
     }
 
 
