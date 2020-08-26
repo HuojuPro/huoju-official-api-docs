@@ -210,7 +210,7 @@
     </a>
     <header>
       <div class="flexbox">
-        <a href="https://huoju.co">
+        <a href="https://huoju.ink">
           <img src="images/logo.png" class="logo" alt="Logo" />
         </a>
         <div class="navbox">
@@ -466,7 +466,7 @@
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href='https://huoju.io'>Huoju Pro</a></li>
+            <li><a href='https://huoju.ink'>Huoju Pro</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -477,8 +477,8 @@
 
 <p>The Huoju Pro API is based on RESTful and WebSocket.</p>
 
-<p>The base URL for the RESTful API is <a href='https://huoju.io'>https://huoju.co</a>.
-    The URL for the WebSocket is: <a href='https://huoju.co/0/api/pro/v1/stream'>https://huoju.co/0/api/pro/v1/stream</a>.</p>
+<p>The base URL for the RESTful API is <a href='https://huoju.ink'>https://huoju.ink</a>.
+    The URL for the WebSocket is: <a href='https://huoju.ink/0/api/pro/v1/stream'>https://huoju.ink/0/api/pro/v1/stream</a>.</p>
 
 <p>The RESTful API has JSON-encoded responses. All websocket messages are JSON-encoded.</p>
 <h2 id='demo-codes'>Demo codes</h2>
@@ -524,7 +524,7 @@ curl -X GET -i <span class="se">\</span>
   -H <span class="s2">"x-auth-key: </span><span class="nv">$APIKEY</span><span class="s2">"</span> <span class="se">\</span>
   -H <span class="s2">"x-auth-signature: </span><span class="nv">$SIGNATURE</span><span class="s2">"</span> <span class="se">\</span>
   -H <span class="s2">"x-auth-timestamp: </span><span class="nv">$TIMESTAMP</span><span class="s2">"</span> <span class="se">\</span>
-  https://huoju.co/api/pro/v1/info
+  https://huoju.ink/api/pro/v1/info
 </code></pre><pre class="highlight python tab-python"><code><span class="c"># python 3.6+</span>
 <span class="kn">import</span> <span class="nn">time</span><span class="p">,</span> <span class="n">hmac</span><span class="p">,</span> <span class="n">hashlib</span><span class="p">,</span> <span class="n">base64</span>
 
@@ -581,7 +581,7 @@ The <code>timestamp</code> is the UTC timestamp in milliseconds.  </p>
 <blockquote>
 <p>List all Assets</p>
 </blockquote>
-<pre class="highlight plaintext"><code>curl -X GET https://huoju.co/api/pro/v1/assets
+<pre class="highlight plaintext"><code>curl -X GET https://huoju.ink/api/pro/v1/assets
 </code></pre>
 <blockquote>
 <p>Sample Response </p>
@@ -652,7 +652,7 @@ The <code>timestamp</code> is the UTC timestamp in milliseconds.  </p>
 <blockquote>
 <p>List all Products </p>
 </blockquote>
-<pre class="highlight plaintext"><code>curl -X GET https://huoju.co/api/pro/v1/products
+<pre class="highlight plaintext"><code>curl -X GET https://huoju.ink/api/pro/v1/products
 </code></pre>
 <blockquote>
 <p>Sample Response </p>
@@ -762,7 +762,7 @@ The <code>timestamp</code> is the UTC timestamp in milliseconds.  </p>
 <blockquote>
 <p>Ticker for one product</p>
 </blockquote>
-<pre class="highlight json tab-json"><code><span class="err">//</span><span class="w"> </span><span class="err">curl</span><span class="w"> </span><span class="err">-X</span><span class="w"> </span><span class="err">GET</span><span class="w"> </span><span class="err">'https</span><span class="p">:</span><span class="err">//huoju.co/api/pro/v</span><span class="mi">1</span><span class="err">/ticker?symbol=BTC/USDT'</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="err">//</span><span class="w"> </span><span class="err">curl</span><span class="w"> </span><span class="err">-X</span><span class="w"> </span><span class="err">GET</span><span class="w"> </span><span class="err">'https</span><span class="p">:</span><span class="err">//huoju.ink/api/pro/v</span><span class="mi">1</span><span class="err">/ticker?symbol=BTC/USDT'</span><span class="w">
 </span><span class="p">{</span><span class="w">
     </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
     </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -786,7 +786,7 @@ The <code>timestamp</code> is the UTC timestamp in milliseconds.  </p>
 <blockquote>
 <p>List of Tickers for one or multiple products</p>
 </blockquote>
-<pre class="highlight json tab-json"><code><span class="err">//</span><span class="w"> </span><span class="err">curl</span><span class="w"> </span><span class="err">-X</span><span class="w"> </span><span class="err">GET</span><span class="w"> </span><span class="s2">"https://huoju.co/api/pro/v1/ticker?symbol=BTC/USDT,"</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="err">//</span><span class="w"> </span><span class="err">curl</span><span class="w"> </span><span class="err">-X</span><span class="w"> </span><span class="err">GET</span><span class="w"> </span><span class="s2">"https://huoju.ink/api/pro/v1/ticker?symbol=BTC/USDT,"</span><span class="w">
 </span><span class="p">{</span><span class="w">
     </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
     </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -893,12 +893,12 @@ If you want to wrap the object in a one-element list, append a comma to the symb
 </tr>
 </tbody></table>
 <h4 id='code-sample'>Code Sample</h4>
-<p>Please refer to python code to [query ticker info]{https://github.com/HuojuPro/huoju-api-demo/blob/master/python/query_pub_ticker.py}</p>
+<p>Please refer to python code to <a href="https://github.com/HuojuPro/huoju-api-demo/blob/master/python/query_pub_ticker.py">query ticker info</a>.</p>
 <h3 id='bar-info'>Bar Info</h3>
 <blockquote>
 <p>Request </p>
 </blockquote>
-<pre class="highlight plaintext"><code>curl -X GET https://huoju.co/api/pro/v1/barhist/info
+<pre class="highlight plaintext"><code>curl -X GET https://huoju.ink/api/pro/v1/barhist/info
 </code></pre>
 <blockquote>
 <p>Sample response</p>
@@ -991,7 +991,7 @@ If you want to wrap the object in a one-element list, append a comma to the symb
 <blockquote>
 <p>Request </p>
 </blockquote>
-<pre class="highlight plaintext"><code>curl -X GET https://huoju.co/api/pro/v1/barhist?symbol=BTC/USDT&amp;interval=1
+<pre class="highlight plaintext"><code>curl -X GET https://huoju.ink/api/pro/v1/barhist?symbol=BTC/USDT&amp;interval=1
 </code></pre>
 <blockquote>
 <p>Sample response</p>
@@ -1149,12 +1149,12 @@ only 500 bars will be returned. </li>
 </tr>
 </tbody></table>
 <h4 id='code-sample'>Code Sample</h4>
-<p>Please refer python code to [get bar history]{https://github.com/HuojuPro/huoju-api-demo/blob/master/python/query_pub_barhist.py}</p>
+<p>Please refer python code to <a href="https://github.com/HuojuPro/huoju-api-demo/blob/master/python/query_pub_barhist.py">get bar history</a></p>
 <h3 id='order-book-depth'>Order Book (Depth)</h3>
 <blockquote>
 <p>Request for Order Book (Depth) Data</p>
 </blockquote>
-<pre class="highlight plaintext"><code>curl -X GET https://huoju.co/api/pro/v1/depth?symbol=BTC/USDT
+<pre class="highlight plaintext"><code>curl -X GET https://huoju.ink/api/pro/v1/depth?symbol=BTC/USDT
 </code></pre>
 <blockquote>
 <p>Order Book (Depth) Data - Sample response </p>
@@ -3794,7 +3794,7 @@ for 30 seconds if a client initiated <code>ping</code> message is received. </p>
 wscat -H <span class="s2">"x-auth-key: </span><span class="nv">$APIKEY</span><span class="s2">"</span> <span class="se">\</span>
   -H <span class="s2">"x-auth-signature: </span><span class="nv">$SIGNATURE</span><span class="s2">"</span> <span class="se">\</span>
   -H <span class="s2">"x-auth-timestamp: </span><span class="nv">$TIMESTAMP</span><span class="s2">"</span> <span class="se">\</span>
-  -c wss://huoju.co/0/api/pro/v1/stream -w 1 -x <span class="s1">'{"op":"sub", "id": "abc123", "ch": "order:cshQtyfq8XLAA9kcf19h8bXHbAwwoqDo:BTC/USDT"}'</span>
+  -c wss://huoju.ink/0/api/pro/v1/stream -w 1 -x <span class="s1">'{"op":"sub", "id": "abc123", "ch": "order:cshQtyfq8XLAA9kcf19h8bXHbAwwoqDo:BTC/USDT"}'</span>
 </code></pre>
 <p>This is similar to the way you authenticate any RESTful request. You need to add the following header fields to the 
 connection request:</p>
@@ -3822,7 +3822,7 @@ connection request:</p>
 <span class="nv">MESSAGE</span><span class="o">=</span><span class="nv">$TIMESTAMP</span>+<span class="nv">$APIPATH</span>
 <span class="nv">SIGNATURE</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> -n <span class="nv">$MESSAGE</span> | openssl dgst -sha256 -hmac <span class="nv">$SECRET</span> -binary | base64<span class="sb">`</span>
 
-wscat -c wss://huoju.co/0/api/v1/pro/stream -w 1 -x <span class="s2">"{</span><span class="se">\"</span><span class="s2">op</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">auth</span><span class="se">\"</span><span class="s2">, </span><span class="se">\"</span><span class="s2">id</span><span class="se">\"</span><span class="s2">: </span><span class="se">\"</span><span class="s2">abc123</span><span class="se">\"</span><span class="s2">, </span><span class="se">\"</span><span class="s2">t</span><span class="se">\"</span><span class="s2">: </span><span class="nv">$TIMESTAMP</span><span class="s2">, "</span>key<span class="s2">": </span><span class="se">\"</span><span class="nv">$APIKEY</span><span class="se">\"</span><span class="s2">, </span><span class="se">\"</span><span class="s2">sig</span><span class="se">\"</span><span class="s2">: </span><span class="se">\"</span><span class="nv">$SIGNATURE</span><span class="se">\"</span><span class="s2">}"</span>
+wscat -c wss://huoju.ink/0/api/v1/pro/stream -w 1 -x <span class="s2">"{</span><span class="se">\"</span><span class="s2">op</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">auth</span><span class="se">\"</span><span class="s2">, </span><span class="se">\"</span><span class="s2">id</span><span class="se">\"</span><span class="s2">: </span><span class="se">\"</span><span class="s2">abc123</span><span class="se">\"</span><span class="s2">, </span><span class="se">\"</span><span class="s2">t</span><span class="se">\"</span><span class="s2">: </span><span class="nv">$TIMESTAMP</span><span class="s2">, "</span>key<span class="s2">": </span><span class="se">\"</span><span class="nv">$APIKEY</span><span class="se">\"</span><span class="s2">, </span><span class="se">\"</span><span class="s2">sig</span><span class="se">\"</span><span class="s2">: </span><span class="se">\"</span><span class="nv">$SIGNATURE</span><span class="se">\"</span><span class="s2">}"</span>
 </code></pre>
 <p>You can also authenticate a live websocket session by sending an <code>op:auth</code> message to the server. </p>
 
@@ -3930,7 +3930,7 @@ wscat -c wss://huoju.co/0/api/v1/pro/stream -w 1 -x <span class="s2">"{</span><s
 npm install -g wscat
 
 <span class="c"># Connect to websocket</span>
-wscat -c wss://huoju.co/0/api/pro/v1/stream -x <span class="s1">'{"op":"sub", "ch": "depth:BTC/USDT"}'</span>
+wscat -c wss://huoju.ink/0/api/pro/v1/stream -x <span class="s1">'{"op":"sub", "ch": "depth:BTC/USDT"}'</span>
 </code></pre>
 <blockquote>
 <p>You can also setup authorized session</p>
