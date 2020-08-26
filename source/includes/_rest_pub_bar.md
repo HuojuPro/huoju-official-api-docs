@@ -3,7 +3,7 @@
 > Request 
 
 ```
-curl -X GET https://huoju.co/api/pro/v1/barhist/info
+curl -X GET https://huoju.ink/api/pro/v1/barhist/info
 ```
 
 > Sample response
@@ -97,7 +97,7 @@ The value in the `name` field should be your input to the [Historical Bar Data](
 > Request 
 
 ```
-curl -X GET https://huoju.co/api/pro/v1/barhist?symbol=BTC/USDT&interval=1
+curl -X GET https://huoju.ink/api/pro/v1/barhist?symbol=BTC/USDT&interval=1
 ```
 
 > Sample response
@@ -176,4 +176,4 @@ Name     | Type   |   value  | Description
 
 #### Code Sample
 
-Please refer python code to [get bar history]{https://github.com/HuojuPro/huoju-api-demo/blob/master/python/query_pub_barhist.py}
+Please refer python code to [get bar history](https://github.com/HuojuPro/huoju-api-demo/blob/master/python/query_pub_barhist.py)

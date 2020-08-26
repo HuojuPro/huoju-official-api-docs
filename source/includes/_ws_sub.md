@@ -10,7 +10,7 @@
 npm install -g wscat
 
 # Connect to websocket
-wscat -c wss://huoju.co/0/api/pro/v1/stream -x '{"op":"sub", "ch": "depth:BTC/USDT"}'
+wscat -c wss://huoju.ink/0/api/pro/v1/stream -x '{"op":"sub", "ch": "depth:BTC/USDT"}'
 ```
 
 > You can also setup authorized session

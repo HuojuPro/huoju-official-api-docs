@@ -3,7 +3,7 @@
 > Ticker for one product
 
 ```json
-// curl -X GET 'https://huoju.co/api/pro/v1/ticker?symbol=BTC/USDT'
+// curl -X GET 'https://huoju.ink/api/pro/v1/ticker?symbol=BTC/USDT'
 {
     "code": 0,
     "data": {
@@ -28,7 +28,7 @@
 > List of Tickers for one or multiple products
 
 ```json
-// curl -X GET "https://huoju.co/api/pro/v1/ticker?symbol=BTC/USDT,"
+// curl -X GET "https://huoju.ink/api/pro/v1/ticker?symbol=BTC/USDT,"
 {
     "code": 0,
     "data": [
@@ -91,4 +91,4 @@ Each ticker object contains the following fields:
 
 #### Code Sample
 
-Please refer to python code to [query ticker info]{https://github.com/HuojuPro/huoju-api-demo/blob/master/python/query_pub_ticker.py}
+Please refer to python code to [query ticker info](https://github.com/HuojuPro/huoju-api-demo/blob/master/python/query_pub_ticker.py).

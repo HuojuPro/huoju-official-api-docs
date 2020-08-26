@@ -3,7 +3,7 @@
 > List all Assets
 
 ```
-curl -X GET https://huoju.co/api/pro/v1/assets
+curl -X GET https://huoju.ink/api/pro/v1/assets
 ```
 
 > Sample Response 

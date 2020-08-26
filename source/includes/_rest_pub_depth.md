@@ -3,7 +3,7 @@
 > Request for Order Book (Depth) Data
 
 ```
-curl -X GET https://huoju.co/api/pro/v1/depth?symbol=BTC/USDT
+curl -X GET https://huoju.ink/api/pro/v1/depth?symbol=BTC/USDT
 ```
 
 > Order Book (Depth) Data - Sample response 

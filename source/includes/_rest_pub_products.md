@@ -3,7 +3,7 @@
 > List all Products 
 
 ```
-curl -X GET https://huoju.co/api/pro/v1/products
+curl -X GET https://huoju.ink/api/pro/v1/products
 ```
 
 > Sample Response 
