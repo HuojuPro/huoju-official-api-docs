@@ -89,7 +89,7 @@ Order detail for each order is in `info` field list.
 
 Name        |  Type    | Description
 ------------| ---------| -------- 
-`ac`        | `String` | `CASH`, `MARGIN`
+`ac`        | `String` | `CASH`
 `accountId` | `String` | account Id
 `action`    | `String` | `cancel-all`
 `status`    | `String` |  `Ack` 
@@ -115,7 +115,7 @@ Error schema
 Name        |  Type    | Description
 ------------| ---------| -------- 
 `code`      | `Long`   | 0
-`ac`        | `String` | `CASH`, `MARGIN`
+`ac`        | `String` | `CASH`
 `accountId` | `String` | account Id
 `action`    | `String` | `batch-cancel-order`
 `message`   | `String` | error message detail

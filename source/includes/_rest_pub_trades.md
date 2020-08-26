@@ -67,4 +67,4 @@ Trade record information in `data`:
 
 #### Code Sample
 
-Please refer to python code to [query trades]{https://github.com/HuojuPro/huoju-api-demo/blob/master/python/query_pub_trades.py}
+Please refer to python code to [query trades](https://github.com/HuojuPro/huoju-api-demo/blob/master/python/query_pub_trades.py)
