@@ -1372,7 +1372,7 @@ only 500 bars will be returned. </li>
 </tr>
 </tbody></table>
 <h4 id='code-sample'>Code Sample</h4>
-<p>Please refer to python code to [query trades]{https://github.com/HuojuPro/huoju-api-demo/blob/master/python/query_pub_trades.py}</p>
+<p>Please refer to python code to <a href="https://github.com/HuojuPro/huoju-api-demo/blob/master/python/query_pub_trades.py">query trades</a></p>
 <h2 id='account'>Account</h2><h3 id='account-info'>Account Info</h3>
 <blockquote>
 <p>Account Info - Sample response:</p>
@@ -2944,7 +2944,7 @@ Order detail for each order is in <code>info</code> field list.</p>
 <tr>
 <td><code>ac</code></td>
 <td><code>String</code></td>
-<td><code>CASH</code>, <code>MARGIN</code></td>
+<td><code>CASH</code></td>
 </tr>
 <tr>
 <td><code>accountId</code></td>
@@ -3025,7 +3025,7 @@ Order detail for each order is in <code>info</code> field list.</p>
 <tr>
 <td><code>ac</code></td>
 <td><code>String</code></td>
-<td><code>CASH</code>, <code>MARGIN</code></td>
+<td><code>CASH</code></td>
 </tr>
 <tr>
 <td><code>accountId</code></td>
@@ -3402,7 +3402,7 @@ Order detail for each order is in <code>info</code> field list.</p>
 </tr>
 </tbody></table>
 <h4 id='code-sample'>Code Sample</h4>
-<p>Please refer to python code to <a href="https://github.com/HuojuPro/huoju-api-demo/blob/master/python/query_order.py">get open orders</a></p>
+<p>Please refer to python code to <a href="https://github.com/HuojuPro/huoju-api-demo/blob/master/python/order_query.py">get open orders</a></p>
 <h3 id='list-current-history-orders'>List Current History Orders</h3>
 <blockquote>
 <p>Current History Orders - Successful Response (Status 200, code 0)</p>
@@ -3681,7 +3681,7 @@ Order detail for each order is in <code>info</code> field list.</p>
 <p>In order to authorize the session you must include <code>&lt;account-group&gt;</code> in the URL. Without <code>&lt;account-group&gt;</code>, you can 
 only subscribe to public data. </p>
 <h3 id='code-sample'>Code Sample</h3>
-<p>Please refer to python code for all kinds of [websocket operation]{https://github.com/HuojuPro/huoju-api-demo/blob/master/python/client.py} (e.g. authorization, sub/unsub, place/cancel order, and so on) </p>
+<p>Please refer to python code for all kinds of <a href="https://github.com/HuojuPro/huoju-api-demo/blob/master/python/client.py">websocket operation</a> (e.g. authorization, sub/unsub, place/cancel order, and so on) </p>
 <h2 id='keep-the-connection-alive-via-ping-pong'>Keep the Connection Alive via Ping/Pong</h2>
 <p>In order to keep the websocket connection alive, you have two options, detailed below.</p>
 <h4 id='method-1-responding-to-server-ping-messages'>Method 1: Responding to Server ping messages</h4>
@@ -4796,7 +4796,7 @@ request message. Here are some use cases: </p>
 
 <ul>
 <li>Connecting to WebSocket Stream</li>
-<li>Subscribe to the depth update stream, see <a href="#level-2-order-book-updates-depth">Level 2 Order Book Updates (Depth)</a>.</li>
+<li>Subscribe to the depth update stream, see <a href="#channel-level-2-order-book-updates">Level 2 Order Book Updates</a>.</li>
 <li>Send a <code>depth-snapshot</code> request to the server.</li>
 <li>Once you obtain the snapshot message from the server, initialize the snapshot.</li>
 <li>Using consequent <code>depth</code> messages to update the order book.</li>
@@ -4880,7 +4880,7 @@ the timely order book data. </p>
 
 <p>Make new order request follow the general websocket request rule, with proper place new order parameters as specified in rest api for <em>args</em> field.</p>
 
-<p>see <a href="#place-new-order">placing order via RESTful API</a>.</p>
+<p>see <a href="#place-order">placing order via RESTful API</a>.</p>
 
 <p><strong>Response</strong></p>
 
